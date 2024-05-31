@@ -1,0 +1,601 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D6EFEB;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}  
+
+/* Header Styles */
+.sticky-header {
+    position: sticky;
+    top: 0;
+}
+
+.header-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00A18B;
+    font-weight: bold;
+    padding: 10px 15px; /* Menambahkan padding untuk ruang di sekitar teks */
+    border-radius: 5px; /* Membuat sudut kotak agak membulat */
+    transition: background-color 0.3s, color 0.3s; /* Animasi transisi */
+}
+
+nav ul li a.active {
+    background-color: #00A18B;
+    color: #ffffff; /* Mengubah warna teks agar kontras dengan background */
+}
+
+nav ul li a:hover {
+    background-color: #004d40; /* Warna highlight saat hover */
+    color: #ffffff; /* Mengubah warna teks agar kontras dengan background saat hover */
+}
+
+.auth-buttons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; /* Ensure buttons stay on the right */
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.donate-button,
+.join-button {
+    background-color: #00A18B;
+    color: #ffffff;
+    width: 70px;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.donate-button:hover,
+.join-button:hover {
+    background-color: #004d40;
+}
+
+/*section*/
+section h1 {
+    margin-bottom: 20px;
+}
+
+.wrapper-payment-p {
+    justify-content: center;
+    display: flex;
+    gap: 200px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section form label {
+    font-weight: bold;
+}
+
+section form input,
+section form select,
+section form textarea {
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+section form button {
+    background-color: #ff9022;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+section form button:hover{
+    background-color: #ffbd7b;
+}
+
+section form button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button-confirm {
+    background-color: #004d40;
+}
+
+.button-confirm:hover {
+    background-color: #00A18B;
+}
+
+section .thank-you {
+    justify-content: center;
+}
+
+section .bank-options {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+section .bank-option {
+    text-align: center;
+}
+
+section .bank-name {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.confirm-payment {
+    background-color: #ff9022;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.confirm-payment :hover {
+    background-color: #ffbd7b;
+}
+
+.confirm-payment a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.wrapper-payment {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #D6EFEB;
+    border-radius: 8px;
+}
+
+.wrapper-payment h1 {
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #D6EFEB;
+}
+
+.kontak-hero {
+    background-color: #00A18B;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-button {
+    background-color: #00A18B;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-button:hover {
+    background-color: #004d40;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #00A18B;
+    color: #ffffff;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Funds Section */
+.funds {
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.funds h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.funds-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan item untuk membungkus ke baris berikutnya */
+    justify-content: space-around;
+    gap: 5px; /* Memberikan jarak antar item */
+}
+
+.fund-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px; /* Memberikan jarak bawah pada item */
+    margin-top: 20px;
+}
+
+.fund-item img {
+    height: auto;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: block; /* Pastikan gambar berada di blok dan terpusat */
+    margin: 0 auto 20px; /* Menambah margin bawah untuk jarak */
+}
+
+.fund-item h3 {
+    margin: 20px 0 10px;
+}
+
+.fund-item button {
+    background-color: #ff9022;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fund-item button:hover {
+    background-color: #ffbd7b;
+}
+
+.fund-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .funds h2 {
+        font-size: 1.5em;
+    }
+
+    .fund-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .funds-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fund-item {
+        width: 80%;
+    }
+}
+
+/* Second Hero Section */
+.second-hero {
+    display: block;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.second-hero a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #00A18B;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-method {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.contact-method img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D6EFEB;
+}
+
+.contact-form form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #00A18B;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #004d40;
+}
+
+.confirm-text {
+    align-items: center;
+}
+
+/* Form Section */
+.form-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D6EFEB;
+}
+
+.form-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-section form {
+    display: inline-flex;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.form-section button {
+    background-color: #00A18B;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-section button:hover {
+    background-color: #004d40;
+}
+
+.form-section p {
+    margin-top: 20px;
+}
+
+.form-section a {
+    color: #00A18B;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-donation {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.wrapper-donation-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add space between the image and the text */
+    max-width: 800px;
+    height: 100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.wrapper-donation-profile img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column; /* Arrange h1 and p vertically */
+    gap: 10px;
+}
+
+.profile-text h1, .profile-text p {
+    margin: 0; /* Remove default margins */
+}
+
+.donate-message {
+    background-color: #00A18B;
+    border-radius: 5px;
+}
+
+.donate-message p {
+    margin-left: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #00A18B;
+    color: white;
+    padding: 20px 0;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer-section {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
